@@ -31,16 +31,16 @@
 
 * Configuration
 ** Basic
-   Add =cquery= to the =dotspacemacs-configuration-layers= list in =~/.spacemacs=.
+   Add =lsp-c-c++= to the =dotspacemacs-configuration-layers= list in =~/.spacemacs=.
 
 ** Setting path to cquery executable
    The basic configuration above should work if the cquery executable folder is present in your path. If not, you can set the path explicitly.
    #+BEGIN_SRC emacs-lisp
-     (cquery :variables cquery-executable "/path/to/bin/cquery")
+     (lsp-c-c++ :variables cquery-executable "/path/to/bin/cquery")
    #+END_SRC
    If you need to expand =~= in the path, you can use =file-truename= like
    #+BEGIN_SRC emacs-lisp
-     (cquery :variables cquery-executable (file-truename "~/bin/cquery"))
+     (lsp-c-c++ :variables cquery-executable (file-truename "~/bin/cquery"))
    #+END_SRC
 
 ** Additional configuration options
